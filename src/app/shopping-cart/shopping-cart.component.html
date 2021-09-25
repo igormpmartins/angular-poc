@@ -1,0 +1,6 @@
+<p>Meu carrinho de compras</p>
+<p *ngFor="let item of items">
+  {{ item }}
+  <button [title]="'Apagar ' + item" (click)="deleted.emit(item)">X</button>
+</p>
+<h4 *ngIf="items.length > 2">Há mais de dois itens!</h4>

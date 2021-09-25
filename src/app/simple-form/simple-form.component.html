@@ -1,0 +1,10 @@
+<h1>Testes de Validação</h1>
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <label
+    >E-mail:
+    <input type="text" formControlName="email" />
+  </label>
+  <button type="submit" [disabled]="!signUpForm.valid">Enviar</button>
+  <br />
+  <p *ngIf="signUpForm.get('email')?.errors?.email">E-mail inválido</p>
+</form>

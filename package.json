@@ -8,6 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "prettier": {
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
